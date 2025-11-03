@@ -94,142 +94,142 @@ def main():
             admin_login(driver)
         elif choice == '4':
             from modules.add_member import add_member
-            admin_login(driver) 
+            add_member(driver) 
         elif choice == '5':
             from modules.edit_member import edit_member
-            admin_login(driver) 
+            edit_member(driver) 
         elif choice == '6':
             from modules.delete_member import delete_member
-            admin_login(driver) 
+            delete_member(driver) 
         elif choice == '7':
             from modules.search_member import search_member
-            admin_login(driver) 
+            search_member(driver) 
         elif choice == '8':
             from modules.navigate_categories import navigate_categories
-            admin_login(driver) 
+            navigate_categories(driver) 
         elif choice == '9':
             from modules.add_category import add_category
-            admin_login(driver) 
+            add_category(driver) 
         elif choice == '10':
             from modules.edit_category import edit_category
-            admin_login(driver) 
+            edit_category(driver) 
         elif choice == '11':
             from modules.delete_category import delete_category
-            admin_login(driver) 
+            delete_category(driver) 
         elif choice == '12':
             from modules.search_category import search_category
-            admin_login(driver) 
+            search_category(driver) 
         elif choice == '13':
             from modules.filter_category import filter_category
-            admin_login(driver)  
+            filter_category(driver)  
         elif choice == '14':
             from modules.navigate_home_products import navigate_product
-            admin_login(driver) 
+            navigate_product(driver) 
         elif choice == '15':
             from modules.add_product import add_product
-            admin_login(driver) 
+            add_product(driver) 
         elif choice == '16':
             from modules.edit_product import edit_product
-            admin_login(driver) 
+            edit_product(driver) 
         elif choice == '17':
             from modules.delete_product import delete_product
-            admin_login(driver) 
+            delete_product(driver) 
         elif choice == '18':
             from modules.search_product import search_product
-            admin_login(driver) 
+            search_product(driver) 
         elif choice == '19':
             from modules.filter_product import filter_product
-            admin_login(driver)      
+            filter_product(driver)      
         elif choice == '20':
             from modules.navigate_client import navigate_client
-            admin_login(driver) 
+            navigate_client(driver) 
         elif choice == '21':
             from modules.add_client import add_client
-            admin_login(driver) 
+            add_client(driver) 
         elif choice == '22':
             from modules.edit_client import edit_client
-            admin_login(driver) 
+            edit_client(driver) 
         elif choice == '23':
             from modules.delete_client import delete_client
-            admin_login(driver) 
+            delete_client(driver) 
         elif choice == '24':
             from modules.search_client import search_client
-            admin_login(driver) 
+            search_client(driver) 
         elif choice == '25':
             from modules.filter_client import filter_client
-            admin_login(driver) 
+            filter_client(driver) 
         elif choice == '26':
             from modules.navigate_certificate import navigate_certificate
-            admin_login(driver) 
+            navigate_certificate(driver) 
         elif choice == '27':
             from modules.add_certificate import add_certificate
-            admin_login(driver) 
+            add_certificate(driver) 
         elif choice == '28':
             from modules.edit_certificate import edit_certificate
-            admin_login(driver) 
+            edit_certificate(driver) 
         elif choice == '29':
             from modules.delete_certificate import delete_certificate
-            admin_login(driver) 
+            delete_certificate(driver) 
         elif choice == '30':
             from modules.search_certificate import search_certificate
-            admin_login(driver) 
+            search_certificate(driver) 
         elif choice == '31':
             from modules.filter_certificate import filter_certificate
-            admin_login(driver)   
+            filter_certificate(driver)   
         elif choice == '32':
             from modules.navigate_certificate import navigate_certificate
-            admin_login(driver) 
+            navigate_certificate(driver) 
         elif choice == '33':
             from modules.add_certificate import add_certificate
-            admin_login(driver) 
+            add_certificate(driver) 
         elif choice == '34':
             from modules.edit_certificate import edit_certificate
-            admin_login(driver) 
+            edit_certificate(driver) 
         elif choice == '35':
             from modules.delete_certificate import delete_certificate
-            admin_login(driver) 
+            delete_certificate(driver) 
         elif choice == '36':
             from modules.search_certificate import search_certificate
-            admin_login(driver) 
+            search_certificate(driver) 
         elif choice == '37':
             from modules.filter_certificate import filter_certificate
-            admin_login(driver)      
+            filter_certificate(driver)      
         elif choice == '38':
             from modules.navigate_testimonial import navigate_testimonial
-            admin_login(driver) 
+            navigate_testimonial(driver) 
         elif choice == '39':
             from modules.add_testimonial  import add_testimonial
-            admin_login(driver) 
+            add_testimonial(driver) 
         elif choice == '40':
             from modules.edit_testimonial  import edit_testimonial
-            admin_login(driver) 
+            edit_testimonial(driver) 
         elif choice == '41':
             from modules.delete_testimonial  import delete_testimonial
-            admin_login(driver) 
+            delete_testimonial(driver) 
         elif choice == '42':
             from modules.search_testimonial  import search_testimonial
-            admin_login(driver) 
+            search_testimonial(driver) 
         elif choice == '43':
             from modules.filter_testimonial import filter_testimonial
-            admin_login(driver)  
+            filter_testimonial(driver)  
         elif choice == '44':
-            from modules.navigate_user import navigate_user
-            admin_login(driver) 
+            from modules.navigate_user import filter_testimonial
+            filter_testimonial(driver) 
         elif choice == '45':
             from modules.add_user  import add_user
-            admin_login(driver) 
+            add_user(driver) 
         elif choice == '46':
             from modules.edit_user  import edit_user
-            admin_login(driver) 
+            edit_user(driver) 
         elif choice == '47':
             from modules.delete_user import delete_user
-            admin_login(driver) 
+            delete_user(driver) 
         elif choice == '48':
             from modules.search_user  import search_user
-            admin_login(driver) 
+            search_user(driver) 
         elif choice == '49':
             from modules.filter_user import filter_user
-            admin_login(driver)                                                                                                                                                   
+            filter_user(driver)                                                                                                                                                   
         elif choice == '50':
             break
         else:
