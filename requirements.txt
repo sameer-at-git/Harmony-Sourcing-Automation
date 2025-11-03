@@ -1,0 +1,7 @@
+# python 3.11 is used 
+selenium==4.15.2
+webdriver-manager==4.0.1
+# download chromdriver from here : https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.59/win64/chromedriver-win64.zip
+# update google chrome if needed , 
+# the version of chromedriver here is 142 and so is my google chrome version, 
+# any version mismatch will result in error.
