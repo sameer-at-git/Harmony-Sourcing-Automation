@@ -5,6 +5,7 @@ from config.settings import BASE_URL
 def setup_driver():
     chrome_options = Options()
     chrome_options.add_argument("--start-maximized")
+    chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])
     service = Service("./drivers/chromedriver.exe")
     driver = webdriver.Chrome(service=service, options=chrome_options)
     url= BASE_URL
@@ -16,7 +17,7 @@ def close_driver(driver):
 
 def show_menu():
     print("\n1. Navigate Home")
-    print("2. Navigate Products")
+    print("2. Navigate Home/Products")
     print("3. Admin Login")
     print("----------------------------------")    
     print("4. Add Member")
@@ -86,8 +87,8 @@ def main():
             from modules.navigate_home import navigate_home
             navigate_home(driver)
         elif choice == '2':
-            from modules.navigate_products import navigate_products
-            navigate_products(driver)
+            from modules.navigate_home_products import navigate_home_products
+            navigate_home_products(driver)
         elif choice == '3':
             from modules.admin_login import admin_login
             admin_login(driver)
@@ -122,7 +123,7 @@ def main():
             from modules.filter_category import filter_category
             admin_login(driver)  
         elif choice == '14':
-            from modules.navigate_products import navigate_product
+            from modules.navigate_home_products import navigate_product
             admin_login(driver) 
         elif choice == '15':
             from modules.add_product import add_product
