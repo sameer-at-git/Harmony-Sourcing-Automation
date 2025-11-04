@@ -20,7 +20,7 @@ def search_product(driver):
             try:
                 product_name = product.find_element(By.XPATH, ".//h3").text.strip()
                 if product_name == search_name:
-                    print(f"\Product '{product_name}' found.")
+                    print(f"Product '{product_name}' found.")
                     found = True
                     break
             except:
