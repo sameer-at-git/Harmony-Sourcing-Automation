@@ -1,0 +1,63 @@
+Testcase No,Assumptions,Testcase Criteria,Testcase Steps,Expected Result,TestData,Actual Result,Testcase Result,https://harmony-sourcing.ktinformatik.com/
+Admin,Admin portal is accessible,Admin Login with valid credentials,"1. Go to admin login page
+2. Enter valid username and password
+3. Click Login",Admin is redirected to Dashboard,"username=admin, password=",,Pass/Fail,
+,Admin portal is accessible,Admin Login with invalid credentials,"1. Go to admin login page
+2. Enter invalid username or password
+3. Click Login",Error message 'Invalid credentials' is displayed,"username=wrong, password=",,Pass/Fail,
+,Admin is logged in,Add new product,"1. Login as Admin
+2. Navigate to Products section
+3. Click 'Add Product'
+4. Fill product details
+5. Save",Product is added successfully and visible in product list,,,Pass/Fail,
+Home,Website is accessible,Visit Home Page,"1. Open browser
+2. Navigate to website home page","Home page loads successfully with header, footer, and main sections","Expected Elements: Header, Footer, Navigation Menu, Banner, Featured Products",,Pass/Fail,
+Products,Website is accessible,Navigate to Products Page,"1. Open browser
+2. Navigate to Products page",Products list is displayed with categories and filters,"Expected Elements: Product categories, Product images, Product names, Prices, Filters",0,,
+Team Management,User has valid admin account,Open Team Members page,Login ? Navigate to /admin/team-members,Team members list is displayed,Admin credentials,,Pass/Fail,
+,User is on Team Members page,Add new member,Click “Add” ? Enter details ? Save,New member appears in list,"Name, Email, Role",,Pass/Fail,
+,At least one member exists,Edit/Delete member,Select a member ? Edit details or Delete ? Confirm,Changes saved OR member removed,Existing member data,,Pass/Fail,
+,User is on Team Members page,Search/Filter members,Enter keyword in search box OR apply filter,Matching members are displayed,Member name / Role,,Pass/Fail,
+,User is logged out,Unauthorized access,Log out ? Visit /admin/team-members directly,Redirected to login / Access denied,N/A,,Pass/Fail,
+Product Category ,User has valid access to the categories section,Access Categories Page,1. Login as Admin                                                                                                                                                                      2. Navigate to Categories page,Categories page loads successfully with a list of existing categories,N/A,,Pass/Fail,
+,User is on the Categories page,Add New Category,1. Click 'Add Category'                                                                                                                                                           2. Enter category name                                                                                                                                                            3. Click 'Save',New category is added and appears in the categories list,Category Name: 'Sustainable Fabrics',,Pass/Fail,
+,At least one category is available in the system,Edit Category,1. Select a category                                                                                                                                                               2. Click 'Edit'                                                                                                                                                                                            3 . Modify category details                                                                                                                                                                   4. Click 'Save',Category details are updated successfully,New Name: 'Organic Cotton',,Pass/Fail,
+,At least one category exists in the system,Delete Category,1. Select a category2. Click 'Delete'3. Confirm deletion,Category is removed from the categories list,N/A,,Pass/Fail,
+,User is on the Categories page,Search Category,1. Enter search term in the search bar2. Press 'Enter',Categories matching the search term are displayed,Search Term: 'Recycled Polyester',,Pass/Fail,
+,Admin is on Categories page,Filter Categories,1. Apply a filter from the filter options2. View filtered categories,Categories are displayed according to the selected filter,Filter: 'Active',,Pass/Fail,
+Product Management,User has valid access to the products page,Access Products Page,1. Login with valid credentials2. Navigate to Products page,Products page loads successfully with a list of existing products,N/A,,Pass/Fail,
+,User is on the Products page,Add New Product,1. Click 'Add Product'2. Enter product details3. Click 'Save',New product is added and appears in the products list,Product Name: 'Eco-Friendly T-Shirt',,Pass/Fail,
+,At least one product exists,Edit Product,1. Select a product2. Click 'Edit'3. Modify product details4. Click 'Save',Product details are updated successfully,New Name: 'Organic Cotton Hoodie',,Pass/Fail,
+,At least one product exists,Delete Product,1. Select a product2. Click 'Delete'3. Confirm deletion,Product is removed from the products list,N/A,,Pass/Fail,
+,User is on the Products page,Search Product,1. Enter search term in the search bar2. Press 'Enter',Products matching the search term are displayed,Search Term: 'Recycled Polyester',,Pass/Fail,
+,User is on the Products page,Filter Products,1. Apply a filter from the filter options2. View filtered products,Products are displayed according to the selected filter,Filter: 'Active',,Pass/Fail,
+Client Management,User has valid access to the clients page,Access Clients Page,1. Login with valid credentials2. Navigate to Clients page,Clients page loads successfully with a list of existing clients,N/A,,Pass/Fail,
+,User is on the Clients page,Add New Client,1. Click 'Add Client'2. Enter client details3. Click 'Save',New client is added and appears in the clients list,Client Name: 'Eco Apparel Ltd.',,Pass/Fail,
+,At least one client exists,Edit Client,1. Select a client2. Click 'Edit'3. Modify client details4. Click 'Save',Client details are updated successfully,New Name: 'Green Textiles Inc.',,Pass/Fail,
+,At least one client exists,Delete Client,1. Select a client2. Click 'Delete'3. Confirm deletion,Client is removed from the clients list,N/A,,Pass/Fail,
+,User is on the Clients page,Search Client,1. Enter search term in the search bar2. Press 'Enter',Clients matching the search term are displayed,Search Term: 'Organic',,Pass/Fail,
+,User is on the Clients page,Filter Clients,1. Apply a filter from the filter options2. View filtered clients,Clients are displayed according to the selected filter,Filter: 'Active',,Pass/Fail,
+Certificte management,User has valid access to the certificates page,Access Certificates Page,1. Login with valid credentials2. Navigate to Certificates page,Certificates page loads successfully with a list of existing certificates,N/A,,Pass/Fail,
+,User is on the Certificates page,Add New Certificate,1. Click 'Add Certificate'2. Enter certificate details3. Click 'Save',New certificate is added and appears in the certificates list,Certificate Name: 'SSL Certificate',,Pass/Fail,
+,At least one certificate exists,Edit Certificate,1. Select a certificate2. Click 'Edit'3. Modify certificate details4. Click 'Save',Certificate details are updated successfully,New Name: 'Updated SSL Certificate',,Pass/Fail,
+,At least one certificate exists,Delete Certificate,1. Select a certificate2. Click 'Delete'3. Confirm deletion,Certificate is removed from the certificates list,N/A,,Pass/Fail,
+,User is on the Certificates page,Search Certificate,1. Enter search term in the search bar2. Press 'Enter',Certificates matching the search term are displayed,Search Term: 'TLS',,Pass/Fail,
+,User is on the Certificates page,Filter Certificates,1. Apply a filter from the filter options2. View filtered certificates,Certificates are displayed according to the selected filter,Filter: 'Active',,Pass/Fail,
+Contact management,User has valid access to the contacts page,Access Contacts Page,1. Login with valid credentials2. Navigate to Contacts page,Contacts page loads successfully with a list of existing contacts,N/A,,Pass/Fail,
+,User is on the Contacts page,Add New Contact,1. Click 'Add Contact'2. Enter contact details3. Click 'Save',New contact is added and appears in the contacts list,,,Pass/Fail,
+,At least one contact exists,Edit Contact,1. Select a contact2. Click 'Edit'3. Modify contact details4. Click 'Save',Contact details are updated successfully,New Name: ,,Pass/Fail,
+,At least one contact exists,Delete Contact,1. Select a contact2. Click 'Delete'3. Confirm deletion,Contact is removed from the contacts list,N/A,,Pass/Fail,
+,User is on the Contacts page,Search Contact,1. Enter search term in the search bar2. Press 'Enter',Contacts matching the search term are displayed,Search Term: 'Doe',,Pass/Fail,
+,User is on the Contacts page,Filter Contacts,1. Apply a filter from the filter options2. View filtered contacts,Contacts are displayed according to the selected filter,Filter: 'Active',,Pass/Fail,
+Testimonial management,User has valid access to the testimonials page,Access Testimonials Page,1. Login with valid credentials2. Navigate to Testimonials page,Testimonials page loads successfully with a list of existing testimonials,N/A,,Pass/Fail,
+,User is on the Testimonials page,Add New Testimonial,1. Click 'Add Testimonial'2. Enter testimonial details3. Click 'Save',New testimonial is added and appears in the testimonials list,Testimonial: 'Great service!',,Pass/Fail,
+,At least one testimonial exists,Edit Testimonial,1. Select a testimonial2. Click 'Edit'3. Modify testimonial details4. Click 'Save',Testimonial details are updated successfully,New Testimonial: 'Exceptional quality!',,Pass/Fail,
+,At least one testimonial exists,Delete Testimonial,1. Select a testimonial2. Click 'Delete'3. Confirm deletion,Testimonial is removed from the testimonials list,N/A,,Pass/Fail,
+,User is on the Testimonials page,Search Testimonial,1. Enter search term in the search bar2. Press 'Enter',Testimonials matching the search term are displayed,Search Term: 'service',,Pass/Fail,
+,User is on the Testimonials page,Filter Testimonials,1. Apply a filter from the filter options2. View filtered testimonials,Testimonials are displayed according to the selected filter,Filter: 'Active',,Pass/Fail,
+User Management,User has valid access to the users page,Access Users Page,1. Login with valid credentials2. Navigate to Users page,Users page loads successfully with a list of existing users,N/A,,Pass/Fail,
+,User is on the Users page,Add New User,1. Click 'Add User'2. Enter user details3. Click 'Save',New user is added and appears in the users list,,,Pass/Fail,
+,At least one user exists,Edit User,1. Select a user2. Click 'Edit'3. Modify user details4. Click 'Save',User details are updated successfully,New Name: ,,Pass/Fail,
+,At least one user exists,Delete User,1. Select a user2. Click 'Delete'3. Confirm deletion,User is removed from the users list,N/A,,Pass/Fail,
+,User is on the Users page,Search User,1. Enter search term in the search bar2. Press 'Enter',Users matching the search term are displayed,Search Term: 'Alice',,Pass/Fail,
+,User is on the Users page,Filter Users,1. Apply a filter from the filter options2. View filtered users,Users are displayed according to the selected filter,Filter: 'Active',,Pass/Fail,
