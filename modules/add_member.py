@@ -29,4 +29,5 @@ def add_member(driver):
     driver.find_element(By.XPATH, "//button[@type='submit']").click()
     
     wait.until(EC.invisibility_of_element_located((By.XPATH, "(//input[@type='text'])[1]")))
+    
     print(f"Member '{name}' added successfully.")
