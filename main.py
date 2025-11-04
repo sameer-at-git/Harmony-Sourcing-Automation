@@ -136,8 +136,8 @@ def main():
             filter_category(driver)  
             close_driver(driver)
         elif choice == '14':
-            from modules.navigate_home_products import navigate_product
-            navigate_product(driver) 
+            from modules.navigate_products import navigate_products
+            navigate_products(driver) 
             close_driver(driver)
         elif choice == '15':
             from modules.add_product import add_product
