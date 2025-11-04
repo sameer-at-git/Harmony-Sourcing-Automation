@@ -139,6 +139,7 @@ def main():
             from modules.navigate_products import navigate_products
             navigate_products(driver) 
             close_driver(driver)
+            
         elif choice == '15':
             from modules.add_product import add_product
             add_product(driver) 
