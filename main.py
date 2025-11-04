@@ -77,12 +77,12 @@ def show_menu():
     print("50. Exit")
 
 def main():
-    driver = setup_driver()
+    
     
     while True:
         show_menu()
         choice = input("\nEnter your choice: ")
-        
+        driver = setup_driver()
         if choice == '1':
             from modules.navigate_home import navigate_home
             navigate_home(driver)
