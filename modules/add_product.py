@@ -14,14 +14,14 @@ def add_product(driver):
     name = input("Enter Product name: ")
     description = input("Enter product description: ")
 
-    category_dropdown = wait.until(EC.presence_of_element_located((By.XPATH, "//select[@class='w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:border-purple-500']")))
-    select = Select(category_dropdown)
-    categories = [option.text for option in select.options if option.text.strip()]
-    print("Available categories:")
-    for i, category in enumerate(categories, 1):
-        print(f"{i}. {category}")
-    choice = int(input("Select category number: "))
-    category_name = categories[choice - 1]
+    product_dropdown = wait.until(EC.presence_of_element_located((By.XPATH, "//select[@class='w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white focus:outline-none focus:border-purple-500']")))
+    select = Select(product_dropdown)
+    products = [option.text for option in select.options if option.text.strip()]
+    print("Available products:")
+    for i, product in enumerate(products, 1):
+        print(f"{i}. {product}")
+    choice = int(input("Select product number: "))
+    product_name = products[choice - 1]
 
     image_path = input("Enter full path to image file (jpg/png/jpeg): ")
     order_number = input("Enter order number: ")
@@ -29,7 +29,7 @@ def add_product(driver):
     wait.until(EC.visibility_of_element_located((By.XPATH, "(//input[@type='text'])[1]"))).send_keys(name)
     driver.find_element(By.CLASS_NAME, "ql-editor").send_keys(description)
 
-    select.select_by_visible_text(category_name)
+    select.select_by_visible_text(product_name)
 
     driver.find_element(By.XPATH, "//input[@type='file']").send_keys(image_path)
     driver.find_element(By.XPATH, "//input[@value='0']").send_keys(order_number)
