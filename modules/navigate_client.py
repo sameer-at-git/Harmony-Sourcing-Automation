@@ -6,7 +6,7 @@ from modules.admin_login import admin_login
 import time
 
 
-def navigate_categories(driver):
+def navigate_client(driver):
     admin_login(driver)
     driver.get(CLIENTS_URL)
     time.sleep(2)

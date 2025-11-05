@@ -30,4 +30,4 @@ def search_product(driver):
             print(f"Product '{search_name}' not found.")
         
     except Exception as e:
-        print(f"Error searching category: {e}")
+        print(f"Error searching Product: {e}")
