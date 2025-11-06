@@ -209,27 +209,27 @@ def main():
             filter_certificate(driver) 
             close_driver(driver)  
         elif choice == '32':
-            from modules.navigate_certificate import navigate_certificate
+            from modules.navigate_contact import navigate_contact
             navigate_certificate(driver) 
             close_driver(driver)
         elif choice == '33':
-            from modules.add_certificate import add_certificate
+            from modules.add_contact import add_contact
             add_certificate(driver) 
             close_driver(driver)
         elif choice == '34':
-            from modules.edit_certificate import edit_certificate
+            from modules.edit_contact import edit_contact
             edit_certificate(driver) 
             close_driver(driver)
         elif choice == '35':
-            from modules.delete_certificate import delete_certificate
+            from modules.delete_contact import delete_contact
             delete_certificate(driver) 
             close_driver(driver)
         elif choice == '36':
-            from modules.search_certificate import search_certificate
+            from modules.search_contact import search_contact
             search_certificate(driver) 
             close_driver(driver)
         elif choice == '37':
-            from modules.filter_certificate import filter_certificate
+            from modules.filter_contact import filter_contact
             filter_certificate(driver)  
             close_driver(driver)    
         elif choice == '38':
@@ -257,7 +257,7 @@ def main():
             filter_testimonial(driver) 
             close_driver(driver) 
         elif choice == '44':
-            from modules.navigate_user import filter_testimonial
+            from modules.navigate_user import navigate_user
             filter_testimonial(driver) 
             close_driver(driver)
         elif choice == '45':

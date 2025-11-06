@@ -4,7 +4,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from config.settings import CERTIFICATES_URL
 from modules.admin_login import admin_login
 
-def add_client(driver):
+def add_certificate(driver):
     admin_login(driver)
     driver.get(CERTIFICATES_URL)
 
@@ -22,4 +22,4 @@ def add_client(driver):
     driver.find_element(By.XPATH, "//button[@type='submit']").click()
     
     wait.until(EC.invisibility_of_element_located((By.XPATH, "(//input[@type='text'])[1]")))
-    print(f"client '{name}' added successfully.")
+    print(f"certificate '{name}' added successfully.")
