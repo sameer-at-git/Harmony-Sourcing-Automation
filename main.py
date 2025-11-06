@@ -54,9 +54,9 @@ def show_menu():
     print("31. Filter Certificate")
     print("----------------------------------")
     print("32. Navigate Contacts")      
-    print("33. Add Contact")
-    print("34. Edit Contact")
-    print("35. Delete Contact")
+    print("33. Add Contact (NA)")
+    print("34. Edit Contact (status only)")
+    print("35. Delete Contact (NA)")
     print("36. Search Contact")
     print("37. Filter Contact")
     print("----------------------------------")
@@ -210,27 +210,27 @@ def main():
             close_driver(driver)  
         elif choice == '32':
             from modules.navigate_contact import navigate_contact
-            navigate_certificate(driver) 
+            navigate_contact(driver) 
             close_driver(driver)
         elif choice == '33':
             from modules.add_contact import add_contact
-            add_certificate(driver) 
+            add_contact(driver) 
             close_driver(driver)
         elif choice == '34':
             from modules.edit_contact import edit_contact
-            edit_certificate(driver) 
+            edit_contact(driver) 
             close_driver(driver)
         elif choice == '35':
             from modules.delete_contact import delete_contact
-            delete_certificate(driver) 
+            delete_contact(driver) 
             close_driver(driver)
         elif choice == '36':
             from modules.search_contact import search_contact
-            search_certificate(driver) 
+            search_contact(driver) 
             close_driver(driver)
         elif choice == '37':
             from modules.filter_contact import filter_contact
-            filter_certificate(driver)  
+            filter_contact(driver)  
             close_driver(driver)    
         elif choice == '38':
             from modules.navigate_testimonial import navigate_testimonial
