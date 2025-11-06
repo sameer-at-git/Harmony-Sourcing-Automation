@@ -258,7 +258,7 @@ def main():
             close_driver(driver) 
         elif choice == '44':
             from modules.navigate_user import navigate_user
-            filter_testimonial(driver) 
+            navigate_user(driver) 
             close_driver(driver)
         elif choice == '45':
             from modules.add_user  import add_user
